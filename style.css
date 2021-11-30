@@ -31,13 +31,6 @@ nav {
   align-items: center;
 }
 
-/* .logo {
-  font-size: 1.7rem;
-  font-weight: 600;
-  font-family: "Barlow", sans-serif;
-  color: white;
-} */
-
 .title {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
@@ -56,8 +49,31 @@ nav {
 
 /* Main section */
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .picture > img {
   width: 100%;
+}
+
+#picture-1 {
+  background-image: url("images/image-graphic-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#picture-2 {
+  background-image: url("images/image-photography.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 section > .content {
@@ -73,7 +89,7 @@ p.heading {
   font-family: "Fraunces", serif;
   text-align: center;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   margin: 2rem 0;
 }
 
@@ -88,7 +104,32 @@ p.link {
   text-transform: uppercase;
   text-align: center;
   font-family: "Fraunces", serif;
-  margin: 3rem 0;
+  margin: 2.3rem 0;
   font-size: 1rem;
   letter-spacing: 1px;
+}
+
+#picture-1 .content,
+#picture-2 .content {
+  position: absolute;
+  bottom: 0;
+}
+
+#picture-1 .content p.heading,
+#picture-1 .content p.info {
+  color: hsl(167, 40%, 24%);
+}
+
+#picture-2 .content p.heading,
+#picture-2 .content p.info {
+  color: hsl(198, 62%, 26%);
+}
+#picture-1 .content p.heading,
+#picture-2 .content p.heading {
+  font-size: 1.725rem;
+}
+
+#picture-1 .content p.info,
+#picture-2 .content p.info {
+  font-size: 1rem;
 }
