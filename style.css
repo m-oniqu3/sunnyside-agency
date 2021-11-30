@@ -10,6 +10,7 @@
 
 body {
   font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
 }
 
 /* Header  */
@@ -63,7 +64,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -72,7 +73,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -94,25 +95,25 @@ p.heading {
 }
 
 p.info {
-  font-family: "Barlow", sans-serif;
   color: hsl(232, 10%, 55%);
   text-align: center;
   line-height: 1.6;
 }
 
-p.link {
+p.small {
   text-transform: uppercase;
   text-align: center;
   font-family: "Fraunces", serif;
   margin: 2.3rem 0;
   font-size: 1rem;
   letter-spacing: 1px;
+  font-weight: 900;
 }
 
 #picture-1 .content,
 #picture-2 .content {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 }
 
 #picture-1 .content p.heading,
@@ -132,4 +133,39 @@ p.link {
 #picture-1 .content p.info,
 #picture-2 .content p.info {
   font-size: 1rem;
+}
+
+/* Testimonials */
+
+.client > p.small {
+  color: hsl(210, 4%, 67%);
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+}
+
+.profile > img {
+  border-radius: 50%;
+  margin: 2rem auto;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials p.info {
+  color: hsl(213, 9%, 39%);
+  font-size: 1.2rem;
+}
+
+p.small-name {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  margin: 2.3rem 0 0.675rem 0;
+  font-size: 1.175rem;
+  font-weight: 900;
+}
+
+p.job {
+  text-align: center;
+  font-size: 0.975rem;
+  color: hsl(210, 4%, 67%);
 }
