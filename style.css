@@ -20,7 +20,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
 }
 
 nav {
@@ -30,6 +30,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav .logo img {
+  width: 8rem;
 }
 
 .title {
