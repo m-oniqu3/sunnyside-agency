@@ -20,7 +20,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 90vh;
 }
 
 nav {
@@ -59,24 +59,6 @@ nav {
   width: 100%;
 }
 
-#picture-1 {
-  background-image: url("images/image-graphic-design.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  position: relative;
-}
-
-#picture-2 {
-  background-image: url("images/image-photography.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  position: relative;
-}
-
 section > .content {
   background-color: white;
 }
@@ -108,6 +90,24 @@ p.small {
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 900;
+}
+
+#picture-1 {
+  background-image: url("images/image-graphic-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+#picture-2 {
+  background-image: url("images/image-photography.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
 }
 
 #picture-1 .content,
@@ -168,4 +168,57 @@ p.job {
   text-align: center;
   font-size: 0.975rem;
   color: hsl(210, 4%, 67%);
+}
+
+/* Image Grid */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-grid > img {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #90d4c5;
+}
+
+.footer .logo {
+  text-align: center;
+}
+
+.footer .logo img {
+  width: 11rem;
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.footer ul li {
+  color: hsl(168, 34%, 41%);
+  font-size: 1.2rem;
+}
+
+/* Icons */
+
+.wrapper > .icons {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.icons > img {
+  margin: 0 0.675rem;
 }
