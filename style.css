@@ -61,6 +61,7 @@ nav .logo img {
 
 .picture > img {
   width: 100%;
+  height: 100%;
 }
 
 section > .content {
@@ -225,4 +226,92 @@ p.job {
 
 .icons > img {
   margin: 0 0.675rem;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 678px) {
+  header {
+    height: 100vh;
+  }
+
+  header .title {
+    margin-top: 7rem;
+  }
+
+  header .arrow {
+    margin-top: 7rem;
+  }
+  .container :nth-child(1) .inner-grid .picture {
+    order: 1;
+  }
+
+  .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inner-grid .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner-grid .content .wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .inner-grid p.heading {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .inner-grid p.info {
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .inner-grid p.small {
+    text-align: left;
+    font-size: 0.825rem;
+    margin: 1rem 0;
+  }
+
+  #picture-1 .content p.heading,
+  #picture-2 .content p.heading {
+    font-size: 1.725rem;
+    text-align: center;
+  }
+
+  #picture-1 .content p.info,
+  #picture-2 .content p.info {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #third #picture-1,
+  #third #picture-2 {
+    height: 60vh;
+  }
+
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-grid :nth-child(3) {
+    grid-column: 1/-1;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
