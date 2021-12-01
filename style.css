@@ -231,3 +231,7 @@ p.job {
 .footer ul li:hover {
   color: white;
 }
+
+.desktop {
+  display: none;
+}

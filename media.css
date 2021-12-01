@@ -107,9 +107,22 @@
     margin: 1rem 0;
   }
 
+  #picture-1 {
+    background-image: url("desktop/image-graphic-design.jpg");
+  }
+
+  #picture-2 {
+    background-image: url("desktop/image-photography.jpg");
+  }
+
   #third #picture-1,
   #third #picture-2 {
     height: 90vh;
+  }
+
+  #picture-1 .content p.heading,
+  #picture-2 .content p.heading {
+    font-size: 1.9rem;
   }
 
   #picture-1 .content,
@@ -137,5 +150,13 @@
   .client #title {
     font-size: 1.5rem;
     margin-top: 5rem;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: grid;
   }
 }
