@@ -3,6 +3,18 @@
 /* Tablets*/
 
 @media only screen and (min-width: 678px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  nav-links.flex {
+    display: flex;
+  }
+
+  nav .logo img {
+    width: 10rem;
+  }
+
   .container :nth-child(1) .inner-grid .picture {
     order: 1;
   }
@@ -82,6 +94,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+  }
+
+  .title {
+    font-size: 3rem;
   }
 
   .inner-grid .content .wrapper {

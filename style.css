@@ -36,6 +36,40 @@ nav .logo img {
   width: 8rem;
 }
 
+nav-links.flex {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+nav-links ul li a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+
+.btn:hover {
+  background-color: #6eceff;
+}
+
 .title {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
