@@ -83,13 +83,59 @@
     background-size: cover;
     height: 100vh;
   }
+
+  .inner-grid .content .wrapper {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .inner-grid p.heading {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .inner-grid p.info {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .inner-grid p.small {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
   #third #picture-1,
   #third #picture-2 {
     height: 90vh;
   }
 
+  #picture-1 .content,
+  #picture-2 .content {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  #picture-1 .content p.info,
+  #picture-2 .content p.info {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
   .client-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .client-grid :nth-child(3) {
+    grid-column: 3;
+  }
+
+  .client #title {
+    font-size: 1.5rem;
+    margin-top: 5rem;
   }
 }
